@@ -1,0 +1,5 @@
+selenium
+webdriver-manager
+bs4
+colorama
+figlet
