@@ -42,19 +42,19 @@ def title1():
     global Views
     while True:
         time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
-        os.system(f'title TikTok Viewer by Rayo#2520 ^| Views Sent: {beautify(Views)} ^| Elapsed Time: {time_elapsed}')
+        os.system(f'title TikTok Viewer by ShawnSavour ^| Views Sent: {beautify(Views)} ^| Elapsed Time: {time_elapsed}')
 
 def title2():
     global Hearts
     while True:
         time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
-        os.system(f'title TikTok Viewer by Rayo#2520 ^| Hearts Sent: {beautify(Hearts)} ^| Elapsed Time: {time_elapsed}')
+        os.system(f'title TikTok Viewer by ShawnSavour ^| Hearts Sent: {beautify(Hearts)} ^| Elapsed Time: {time_elapsed}')
 
 def title3():
     global Followers
     while True:
         time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
-        os.system(f'title TikTok Viewer by Rayo#2520 ^| Followers Sent: {beautify(Followers)} ^| Elapsed Time: {time_elapsed}')
+        os.system(f'title TikTok Viewer by ShawnSavour ^| Followers Sent: {beautify(Followers)} ^| Elapsed Time: {time_elapsed}')
     
 
 def loop1():
