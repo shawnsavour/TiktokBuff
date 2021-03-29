@@ -4,6 +4,7 @@ from time import time, strftime, gmtime, sleep
 import pyfiglet, os, threading
 from colorama import Fore, Back, Style
 from datetime import datetime
+from webdriver_manager.chrome import ChromeDriverManager
 
 system("cls")
 os.system('title TikTok Buff by Shawn')
@@ -19,7 +20,7 @@ time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--mute-audio")
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-driver = webdriver.Chrome(r"chromedriver.exe", options=chrome_options)
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 driver.set_window_size(1024, 650)
 
 Views = 0
