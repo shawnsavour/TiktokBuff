@@ -20,7 +20,7 @@ time_elapsed = strftime('%H:%M:%S', gmtime(time() - start))
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--mute-audio")
 chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+driver = webdriver.Chrome(service=ChromeDriverManager().install(), options=chrome_options)
 driver.set_window_size(1024, 650)
 
 Views = 0
@@ -156,6 +156,7 @@ elif auto == 3:
     b.start()
 else:
     print("Input between 1-3")
+
 
 
 
